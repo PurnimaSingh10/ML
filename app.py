@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+from sklearn.ensemble import RandomForestClassifier
 
 # Load the Random Forest CLassifier model
 filename = 'diabetic_predict_rfc_model.pkl'
