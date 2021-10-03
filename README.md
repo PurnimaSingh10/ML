@@ -1,1 +1,1 @@
-Diebetes Prediction ML
+Diabetes Prediction ML
