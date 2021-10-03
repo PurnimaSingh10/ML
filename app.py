@@ -4,11 +4,13 @@ import pickle
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
+app = Flask(__name__)
+
 # Load the Random Forest CLassifier model
 filename = 'diabetic_predict_rfc_model.pkl'
 classifier = pickle.load(open(filename, 'rb'))
 
-app = Flask(__name__)
+
 
 @app.route('/')
 def home():
