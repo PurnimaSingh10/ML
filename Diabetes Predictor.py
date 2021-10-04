@@ -45,8 +45,8 @@ impute_zero_test_data(x_test,list_feature_contain_zero)
 #using Random Forest model comes under Ensamble technique under Bootstrap Aggregetion
 
 
-classifier=RandomForestClassifier(n_estimators=20)
-classifier.fit(x_train,y_train)
+classifierr=RandomForestClassifier(n_estimators=20)
+classifierr.fit(x_train,y_train)
 
 
 #pred=classifier.predict(x_test)
@@ -57,4 +57,4 @@ classifier.fit(x_train,y_train)
 #print(classification_report(y_test,pred))
 
 filename='diabetic_predict_rfc_model.pkl'
-pickle.dump(classifier,open(filename,'wb'))
+pickle.dump(classifierr,open(filename,'wb'))
