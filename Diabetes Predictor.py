@@ -49,5 +49,12 @@ classifier=RandomForestClassifier(n_estimators=20)
 classifier.fit(x_train,y_train)
 
 
+#pred=classifier.predict(x_test)
+
+
+#from sklearn.metrics import classification_report,confusion_matrix
+#print(confusion_matrix(y_test,pred))
+#print(classification_report(y_test,pred))
+
 filename='diabetic_predict_rfc_model.pkl'
 pickle.dump(classifier,open(filename,'wb'))
