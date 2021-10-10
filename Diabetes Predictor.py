@@ -58,3 +58,5 @@ classifierr.fit(x_train,y_train)
 
 filename='diabetic_predict_rfc_model.pkl'
 pickle.dump(classifierr,open(filename,'wb'))
+
+
